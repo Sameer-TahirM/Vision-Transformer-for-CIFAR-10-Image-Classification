@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h2 {
+            color: #333;
+        }
+        .results-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .result {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #555;
+        }
+        .back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Classification Results</h2>
+    <div class="results-container">
+        <div class="result">
+            <strong>Vision Transformer (ViT):</strong> {{ results['Vision Transformer (ViT)'] }}
+        </div>
+        <div class="result">
+            <strong>ResNet-18:</strong> {{ results['ResNet-18'] }}
+        </div>
+        <div class="result">
+            <strong>Hybrid MLP-CNN:</strong> {{ results['Hybrid MLP-CNN'] }}
+        </div>
+        <a href="/">
+            <button class="back-button">Classify Another Image</button>
+        </a>
+    </div>
+</body>
+</html>
