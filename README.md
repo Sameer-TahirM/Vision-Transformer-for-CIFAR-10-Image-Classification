@@ -47,19 +47,6 @@ The models were trained and evaluated on the CIFAR-10 test set. The ResNet-18 mo
 
 ## Visualizations
 
-#### Training and Validation Loss Curves
-The loss curves illustrate the training progress and convergence of the models.
-
-![Training and Validation Loss](https://i.ibb.co/68f773N/training-loss-plot.png)
-*(Note: Replace with a path to your own saved plot image, e.g., `assets/loss_plot.png`)*
-
-#### Confusion Matrix
-The confusion matrix shows the classification performance for each class on the test set.
-
-![Confusion Matrix](https://i.ibb.co/YPXK94G/confusion-matrix-plot.png)
-*(Note: Replace with a path to your own saved plot image, e.g., `assets/confusion_matrix.png`)*
-
-
 ## Dependencies
 
 The project requires the following Python libraries. You can install them all using `pip install -r requirements.txt`.
